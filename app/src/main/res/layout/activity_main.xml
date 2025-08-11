@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clock me"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#87D57C"
+        android:textColor="#ffff"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Click me 2"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/btn1"
+        />
+
+
+<!--        <TextView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:text="Hi Nikhil How Are You Bro"/>-->
+
+
+
+</RelativeLayout>
