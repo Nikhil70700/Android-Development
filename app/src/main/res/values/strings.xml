@@ -1,7 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FirstAndroidProjectt</string>
+
+    <!-- Your existing strings -->
     <string name="Contact">Contact_Page</string>
     <string name="ContactUs">Customer Satisfaction First – Our friendly staff and seamless shopping experience make us your trusted grocery partner.</string>
     <string name="EditTextHint">Enter Your Name</string>
     <string name="SubmitText">Submit Here</string>
+
+    <!-- Strings referenced by fragments / navigation / menu -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="first_fragment_label">First</string>
+    <string name="second_fragment_label">Second</string>
 </resources>

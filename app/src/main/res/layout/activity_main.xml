@@ -1,52 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8F8"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:background="#F8F8F8"
-    tools:context=".MainActivity"
-    android:padding="16dp">
+    android:padding="26dp"
+    tools:context=".MainActivity">
 
     <!-- Image -->
     <ImageView
+        android:id="@+id/contactImageView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:contentDescription="@string/Contact"
         android:scaleType="fitXY"
-        android:src="@drawable/contact_us"
-        android:contentDescription="@string/Contact" />
+        android:src="@drawable/contact_us" />
 
     <!-- Title -->
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ContactUs"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#6084DE"
         android:gravity="center"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:text="@string/ContactUs"
+        android:textColor="#6084DE"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <!-- Name input -->
     <EditText
+        android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="12"
-        android:inputType="textPersonName"
         android:hint="@string/EditTextHint"
-        android:padding="10dp" />
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- Submit button -->
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SubmitText"
         android:layout_gravity="center"
+        android:backgroundTint="#6084DE"
         android:paddingHorizontal="34dp"
         android:paddingVertical="12dp"
-        android:backgroundTint="#6084DE"
+        android:text="@string/SubmitText"
         android:textColor="#FFFFFF" />
 
 </LinearLayout>
