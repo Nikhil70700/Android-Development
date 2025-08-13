@@ -3,11 +3,11 @@ package com.example.firstandroidprojectt;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.firstandroidprojectt.databinding.ActivityMainBinding;
 
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupSubmitButton() {
-        // Using view binding to access the submit button
-        binding.submitButton.setOnClickListener(new View.OnClickListener() {
+        // Using view binding to access the submit button (ID: button2)
+        binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 handleSubmitClick();
@@ -41,16 +41,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleSubmitClick() {
-        // Get the text from the EditText
-        String name = binding.nameEditText.getText().toString().trim();
+        // Get the text from the EditText (ID: editTextText)
+        String name = binding.editTextText.getText().toString().trim();
 
         if (!name.isEmpty()) {
             // Show success message
             Toast.makeText(this, "Hello " + name + "! Your message has been submitted.",
                     Toast.LENGTH_LONG).show();
 
-            // Clear the input field
-            binding.nameEditText.setText("");
+            // Clear the input field by setting it to empty
+            binding.editTextText.setText("");
 
             // Log the submission
             Log.d(TAG, "Form submitted successfully with name: " + name);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
 
             // Request focus on the EditText
-            binding.nameEditText.requestFocus();
+            binding.editTextText.requestFocus();
 
             Log.w(TAG, "Submit attempted with empty name field");
         }
